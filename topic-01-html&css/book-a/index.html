@@ -1,209 +1,189 @@
- <!DOCTYPE html>
- <html>
-   <head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+          type="text/css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+          rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
 
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-     
-
-     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
-
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-     <script>hljs.initHighlightingOnLoad();</script>
-
-     
-
-     <style>
-       
-
-body 
-{
+body {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+  font-size:90%;
+  color: black;
 }
 
-figcaption
-{
-  margin-bottom: 20px;
+p {
+  margin: 0.5em;
 }
 
-.vertical-align
-{
-  display: flex;
-  align-items: center;
-}
-
-.ui.segment.pushable
-{
-  margin: 0;
-  padding: 1rem 0;
-  overflow: visible;
-}
-
-
-
-     </style>
-
-   </head>
-
-  <body>
-    
-
-<style>
-  
-
-code
-{
+pre code {
   font-family: "Monaco";
-  font-size: 110%;
+  font-size: 100%;
 }
 
-img
-{
-  padding:1px;
-  border:1px solid black;
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
 }
 
-h1
-{
+h1, h2, h3 {
+  border-bottom:thin solid black;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h1 {
   font-style:italic;
   font-size:130%;
-  border-bottom:thin solid black;
 }
 
-h2
-{
+h2 {
   font-size:110%;
-  border-bottom: thin solid black;
 }
 
-h3
-{
+h3 {
   font-size:100%;
-  border-bottom: thin solid black;
 }
 
-body
-{
-  overflow-y: scroll;
-}
 
-.pushable > .pusher
-{
-  padding-bottom: 1.5rem;
-}
 
-.ui.segment.pushable
-{
+      
+
+html, body {
+  height: 100%;
   margin: 0;
-  padding: 1rem 0;
-  overflow: visible;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  background: white;
+  text-align: right;
+}
+.content {
+  flex: 1;
+  overflow: auto;
 }
 
 
 
-</style>
+    </style>
+  </head>
 
-<div class="ui fixed top pointing inverted stackable menu labmenu">
-  <header class="header item">
-    <i id="toc" class="sitemap icon"></i>
-    <a href="../index.html">
-      Week 1: CSS Framework
-    </a>
-  </header>
-  <div class="right tab-menu menu">
-    
-    <a class="item" data-tab="Lab-01a Semantic UI">
-      Lab-01a Semantic UI
-    </a>
-    
-    <a class="item" data-tab="01">
-      01
-    </a>
-    
-    <a class="item" data-tab="02">
-      02
-    </a>
-    
-    <a class="item" data-tab="03">
-      03
-    </a>
-    
-    <a class="item" data-tab="04">
-      04
-    </a>
-    
-    <a class="item" data-tab="05">
-      05
-    </a>
-    
-    <a class="item" data-tab="06">
-      06
-    </a>
-    
-    <a class="item" data-tab="07">
-      07
-    </a>
-    
-    <a class="item" data-tab="08">
-      08
-    </a>
-    
-    <a class="item" data-tab="09">
-      09
-    </a>
-    
-    <a class="item" data-tab="Exercise">
-      Exercise
-    </a>
-    
-    <div class="item">
-      
-    </div>
-  </div>
-</div>
+  
+  
 
-<div class="ui segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    
+  <div class="ui fixed top pointing inverted stackable menu labmenu">
+    <header class="header item">
+      <i id="toc" class="sitemap icon"></i>
       
-        <a class="item" href="../../topic-01-html&css/book-a/index.html">
+        <a href="../index.html"> Week 1: CSS Framework  </a>
+      
+    </header>
+    <div class="right tab-menu menu">
+      
+        <a class="item" data-tab="Lab-01a Semantic UI">
           Lab-01a Semantic UI
         </a>
       
-    
-      
-        <a class="item" href="../../topic-01-html&css/book-b/index.html">
-          Lab-01b Semantic UI
+        <a class="item" data-tab="01">
+          01
         </a>
       
-    
-      
-        <a class="item" href="../../topic-02-glitch-intro/book-00-glitch-intro/index.html">
-          Lab-2 Glitch Intro
+        <a class="item" data-tab="02">
+          02
         </a>
       
-    
+        <a class="item" data-tab="03">
+          03
+        </a>
+      
+        <a class="item" data-tab="04">
+          04
+        </a>
+      
+        <a class="item" data-tab="05">
+          05
+        </a>
+      
+        <a class="item" data-tab="06">
+          06
+        </a>
+      
+        <a class="item" data-tab="07">
+          07
+        </a>
+      
+        <a class="item" data-tab="08">
+          08
+        </a>
+      
+        <a class="item" data-tab="09">
+          09
+        </a>
+      
+        <a class="item" data-tab="Exercise">
+          Exercise
+        </a>
+      
+    </div>
   </div>
-  <div class="pusher" tabindex="-1">
-    <div class="ui basic segment" id="labchat">
-      <br>
+
+
+  
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <br><br>
       
-      <div  class="ui tab segment lab" data-tab="Lab-01a Semantic UI">
-        <h1>Objectives</h1>
+        
+          
+            <a class="item"
+               href="http://WebAppDevelopment.github.io/web-app-dev-2018///topic-01-html&css/book-a/index.html">Lab-01a Semantic UI </a>
+          
+        
+      
+        
+          
+            <a class="item"
+               href="http://WebAppDevelopment.github.io/web-app-dev-2018///topic-01-html&css/book-b/index.html">Lab-01b Semantic UI </a>
+          
+        
+      
+    </div>
+    <div class="pusher" tabindex="-1">
+      <div class="ui basic segment">
+        <br>
+        
+          <div class="ui tab segment lab" data-tab="Lab-01a Semantic UI">
+            <h1>Objectives</h1>
 <p>Rebuild the web site using semantic-ui</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="01">
-        <h1>Setup</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="01">
+            <h1>Setup</h1>
 <p>The starting point for this lab is a website based on a computing programme:</p>
 <ul>
 <li>Download Archive: <a href="archives/Lab01a.zip">Lab01a</a></li>
@@ -255,10 +235,10 @@ body
     └── style.css</code></pre>
 <p>Make sure you can see this structure in Windows Explorer / Mac Finder.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="02">
-        <h1>semantic.css</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="02">
+            <h1>semantic.css</h1>
 <p>The first step is to download and save the semantic style sheet. Download this archive here:</p>
 <ul>
 <li><a href="archives/semantic.zip">semantic.zip</a></li>
@@ -300,10 +280,10 @@ body
 <p>There should be an extra semantic folder - with the files/folders shown above (some not shown to keep it simpler)</p>
 <p>You should delete the <strong>semantic.zip</strong> folder if it is present.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="03">
-        <h1>First Steps...</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="03">
+            <h1>First Steps...</h1>
 <p>Open the home page (<strong>index.html</strong>) and introduce a link to the style sheet we downloaded in the last step:</p>
 <pre><code>  &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/semantic/semantic.css&quot;&gt;</code></pre>
 <p>This goes into the <code>&lt;head&gt;</code> section of index such that it will look like this:</p>
@@ -327,10 +307,10 @@ body
 <p>The site will look like this:</p>
 <p><img src="img/01.png" alt=""></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="04">
-        <h1>Container</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="04">
+            <h1>Container</h1>
 <p>The <code>&lt;body&gt;</code> of our index page looks like this:</p>
 <pre><code>&lt;body&gt;
 
@@ -438,10 +418,10 @@ body
 <p>Your page should look like this:</p>
 <p><img src="img/02.png" alt=""></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="05">
-        <h1>Segment</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="05">
+            <h1>Segment</h1>
 <p>The cornerstone of many of the styles in Semantic-UI is the <strong>segment</strong> class:</p>
 <ul>
 <li><a href="http://semantic-ui.com/elements/segment.html">http://semantic-ui.com/elements/segment.html</a></li>
@@ -525,10 +505,10 @@ and sponsors</p>
 <p>The pages will start to look like this:</p>
 <p><img src="img/04.png" alt=""></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="06">
-        <h1>Strands</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="06">
+            <h1>Strands</h1>
 <p>We need to make similar adjustments to all of the pages in the strands folder.</p>
 <p>Replace the head section with the version shown below that includes Semantic-ui</p>
 <pre><code>&lt;head&gt;
@@ -615,10 +595,10 @@ and sponsors</p>
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="07">
-        <h1>Grids I</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="07">
+            <h1>Grids I</h1>
 <p>This is our current header section for <strong>index.html</strong>:</p>
 <pre><code>&lt;header class=&quot;ui segment&quot;&gt;
   &lt;h2&gt;
@@ -699,10 +679,10 @@ and sponsors</p>
   &lt;/p&gt;
 &lt;/footer&gt;</code></pre>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="08">
-        <h1>Grids II</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="08">
+            <h1>Grids II</h1>
 <p>We can apply the same principles to tidy up the sponsors section the home page:</p>
 <pre><code>&lt;section class=&quot;ui segment&quot;&gt;
   &lt;h4&gt; Supported by leading edge research at... &lt;/h4&gt;
@@ -765,10 +745,10 @@ Try this out now:</p>
 &lt;/section&gt;</code></pre>
 <p><img src="img/12.png" alt=""></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="09">
-        <h1>Grids III</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="09">
+            <h1>Grids III</h1>
 <p>Currently our curriculum section looks like this:</p>
 <p><img src="img/14.png" alt=""></p>
 <p>We would like to reformat it as follows:</p>
@@ -888,10 +868,10 @@ Try this out now:</p>
 <p><img src="img/15.png" alt=""></p>
 <p>Note the use of blank lines in the code to help keep the structure readable.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="Exercise">
-        <h1>Exercise</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="Exercise">
+            <h1>Exercise</h1>
 <h2>Exercise 1: Icons</h2>
 <p>Currently the footer looks like this:</p>
 <p><img src="img/16.png" alt=""></p>
@@ -902,25 +882,16 @@ Try this out now:</p>
 <li><a href="http://semantic-ui.com/elements/icon.html">http://semantic-ui.com/elements/icon.html</a></li>
 </ul>
 
+          </div>
+        
       </div>
-     
     </div>
   </div>
-</div>
-<!--<div class="ui bottom fixed borderless right menu">
-  <div class="ui right tiny menu">
-    <div class="ui mini message segment">
-      .
-      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
-         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-         target="_blank">Creative Commons License
-      </a>
-    </div>
-  </div>
-</div>-->
 
-<script>
-  $(document).on('keydown', function(e) {
+
+
+  <script>
+    $(document).on('keydown', function(e) {
   e = e || window.event;
   var nextTab;
   switch (e.which || e.keyCode) {
@@ -940,15 +911,7 @@ Try this out now:</p>
   }
 });
 
-</script>
-
-
-
-    <footer>
-
-    </footer>
-    <script>
-      $(document).ready(function() {
+    $(document).ready(function() {
   $('img').addClass('ui image');
 
   $('.ui.embed').embed();
@@ -981,7 +944,18 @@ Try this out now:</p>
     .sidebar('attach events', '#toc');
 });
 
-    </script>
+  </script>
+
+
+
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right small menu">
+      <div class="ui tiny basic message segment">
+         Powered by <a href="https://github.com/edeleastar/tutors-ts">tutors-ts.</a> 
+      </div>
+    </div>
+  </div>
+
   </body>
 
- </html>
+</html>

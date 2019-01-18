@@ -1,213 +1,193 @@
- <!DOCTYPE html>
- <html>
-   <head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+          type="text/css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+          rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
 
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-     
-
-     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
-
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-     <script>hljs.initHighlightingOnLoad();</script>
-
-     
-
-     <style>
-       
-
-body 
-{
+body {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+  font-size:90%;
+  color: black;
 }
 
-figcaption
-{
-  margin-bottom: 20px;
+p {
+  margin: 0.5em;
 }
 
-.vertical-align
-{
-  display: flex;
-  align-items: center;
-}
-
-.ui.segment.pushable
-{
-  margin: 0;
-  padding: 1rem 0;
-  overflow: visible;
-}
-
-
-
-     </style>
-
-   </head>
-
-  <body>
-    
-
-<style>
-  
-
-code
-{
+pre code {
   font-family: "Monaco";
-  font-size: 110%;
+  font-size: 100%;
 }
 
-img
-{
-  padding:1px;
-  border:1px solid black;
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
 }
 
-h1
-{
+h1, h2, h3 {
+  border-bottom:thin solid black;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h1 {
   font-style:italic;
   font-size:130%;
-  border-bottom:thin solid black;
 }
 
-h2
-{
+h2 {
   font-size:110%;
-  border-bottom: thin solid black;
 }
 
-h3
-{
+h3 {
   font-size:100%;
-  border-bottom: thin solid black;
 }
 
-body
-{
-  overflow-y: scroll;
-}
 
-.pushable > .pusher
-{
-  padding-bottom: 1.5rem;
-}
 
-.ui.segment.pushable
-{
+      
+
+html, body {
+  height: 100%;
   margin: 0;
-  padding: 1rem 0;
-  overflow: visible;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  background: white;
+  text-align: right;
+}
+.content {
+  flex: 1;
+  overflow: auto;
 }
 
 
 
-</style>
+    </style>
+  </head>
 
-<div class="ui fixed top pointing inverted stackable menu labmenu">
-  <header class="header item">
-    <i id="toc" class="sitemap icon"></i>
-    <a href="../index.html">
-      Week 1: CSS Framework
-    </a>
-  </header>
-  <div class="right tab-menu menu">
-    
-    <a class="item" data-tab="Lab-01b Semantic UI">
-      Lab-01b Semantic UI
-    </a>
-    
-    <a class="item" data-tab="01">
-      01
-    </a>
-    
-    <a class="item" data-tab="02">
-      02
-    </a>
-    
-    <a class="item" data-tab="03">
-      03
-    </a>
-    
-    <a class="item" data-tab="04">
-      04
-    </a>
-    
-    <a class="item" data-tab="05">
-      05
-    </a>
-    
-    <a class="item" data-tab="06">
-      06
-    </a>
-    
-    <a class="item" data-tab="07">
-      07
-    </a>
-    
-    <a class="item" data-tab="08">
-      08
-    </a>
-    
-    <a class="item" data-tab="09">
-      09
-    </a>
-    
-    <a class="item" data-tab="10">
-      10
-    </a>
-    
-    <a class="item" data-tab="Exercise">
-      Exercise
-    </a>
-    
-    <div class="item">
-      
-    </div>
-  </div>
-</div>
+  
+  
 
-<div class="ui segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    
+  <div class="ui fixed top pointing inverted stackable menu labmenu">
+    <header class="header item">
+      <i id="toc" class="sitemap icon"></i>
       
-        <a class="item" href="../../topic-01-html&css/book-a/index.html">
-          Lab-01a Semantic UI
-        </a>
+        <a href="../index.html"> Week 1: CSS Framework  </a>
       
-    
+    </header>
+    <div class="right tab-menu menu">
       
-        <a class="item" href="../../topic-01-html&css/book-b/index.html">
+        <a class="item" data-tab="Lab-01b Semantic UI">
           Lab-01b Semantic UI
         </a>
       
-    
-      
-        <a class="item" href="../../topic-02-glitch-intro/book-00-glitch-intro/index.html">
-          Lab-2 Glitch Intro
+        <a class="item" data-tab="01">
+          01
         </a>
       
-    
-  </div>
-  <div class="pusher" tabindex="-1">
-    <div class="ui basic segment" id="labchat">
-      <br>
+        <a class="item" data-tab="02">
+          02
+        </a>
       
-      <div  class="ui tab segment lab" data-tab="Lab-01b Semantic UI">
-        <h1>Objectives</h1>
+        <a class="item" data-tab="03">
+          03
+        </a>
+      
+        <a class="item" data-tab="04">
+          04
+        </a>
+      
+        <a class="item" data-tab="05">
+          05
+        </a>
+      
+        <a class="item" data-tab="06">
+          06
+        </a>
+      
+        <a class="item" data-tab="07">
+          07
+        </a>
+      
+        <a class="item" data-tab="08">
+          08
+        </a>
+      
+        <a class="item" data-tab="09">
+          09
+        </a>
+      
+        <a class="item" data-tab="10">
+          10
+        </a>
+      
+        <a class="item" data-tab="Exercise">
+          Exercise
+        </a>
+      
+    </div>
+  </div>
+
+
+  
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <br><br>
+      
+        
+          
+            <a class="item"
+               href="http://WebAppDevelopment.github.io/web-app-dev-2018///topic-01-html&css/book-a/index.html">Lab-01a Semantic UI </a>
+          
+        
+      
+        
+          
+            <a class="item"
+               href="http://WebAppDevelopment.github.io/web-app-dev-2018///topic-01-html&css/book-b/index.html">Lab-01b Semantic UI </a>
+          
+        
+      
+    </div>
+    <div class="pusher" tabindex="-1">
+      <div class="ui basic segment">
+        <br>
+        
+          <div class="ui tab segment lab" data-tab="Lab-01b Semantic UI">
+            <h1>Objectives</h1>
 <p>Continue to enhance the web site with additional Semantic-UI styles &amp; Components</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="01">
-        <h1>Setup</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="01">
+            <h1>Setup</h1>
 <p>This lab assumes you have completed the last lab - an archive of the completed project can be found here:</p>
 <ul>
 <li><a href="archives/Lab01b.zip">Lab01b</a></li>
@@ -215,10 +195,10 @@ body
 <p>In this lab we will further enhance the project so that the home page looks something like this:</p>
 <p><img src="img/03.png" alt=""></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="02">
-        <h1>Icons</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="02">
+            <h1>Icons</h1>
 <p>We left the footer from the last practical looking like this:</p>
 <p><img src="img/01.png" alt=""></p>
 <p>with the task of making it look like this:</p>
@@ -243,10 +223,10 @@ body
 &lt;/footer&gt;</code></pre>
 <p><strong>Note:</strong> Do this for all the strand pages also.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="03">
-        <h1>Background colours</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="03">
+            <h1>Background colours</h1>
 <p>We will make the curriculum a little more eye catching but introducing some colour into each of the columns.</p>
 <p>The framework defines a set of colours we can use:</p>
 <p><img src="img/06.png" alt=""></p>
@@ -302,10 +282,10 @@ body
 ...</code></pre>
 <p><img src="img/08.png" alt=""></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="04">
-        <h1>Icons</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="04">
+            <h1>Icons</h1>
 <p>We have already seen how to integrate icons into our site in step 2 (twitter, facebook and linkedin). </p>
 <p>We can also enhance other aspects of the site using icons - perhaps as a visual cue or aid, or also a a prompt for navigability:</p>
 <p><img src="img/09.png" alt=""></p>
@@ -478,10 +458,10 @@ Here is an alternative version:</p>
 &lt;/section&gt;</code></pre>
 <p><img src="img/11.png" alt=""></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="05">
-        <h1>Padding, Raised and Stacked Segments</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="05">
+            <h1>Padding, Raised and Stacked Segments</h1>
 <p>The range of options available for the <code>segment</code> class is worth exploring in detail:</p>
 <ul>
 <li><a href="http://semantic-ui.com/elements/segment.html">http://semantic-ui.com/elements/segment.html</a></li>
@@ -498,10 +478,10 @@ Here is an alternative version:</p>
 <p>Type &#39;stacked&#39; in the other segments. Eg. the header:</p>
 <p><img src="img/17.png" alt=""></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="06">
-        <h1>Strand pages</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="06">
+            <h1>Strand pages</h1>
 <p>Our strand pages are still not rendering correctly:</p>
 <p><img src="img/18.png" alt=""></p>
 <p>The images are not sized correctly, and the text is not flowing well. This is how we would like it to look:</p>
@@ -590,10 +570,10 @@ Here is an alternative version:</p>
 <p>Make sure you can relate the above use of these grid parameters to the actual layout.</p>
 <p>When you get this working - adapt all of the strand pages to follow a similar model.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="07">
-        <h1>Banner</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="07">
+            <h1>Banner</h1>
 <p>Currently the banner/summary section needs some attention:</p>
 <p><img src="img/20.png" alt=""></p>
 <p>The text is not really legible - and is too wide to read. This is what we would like to have:</p>
@@ -799,10 +779,10 @@ Here is an alternative version:</p>
 
 &lt;/body&gt;</code></pre>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="08">
-        <h1>Responsive Grids</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="08">
+            <h1>Responsive Grids</h1>
 <p>Try narrowing making the browser very narrow - like this:</p>
 <p><img src="img/23.png" alt=""></p>
 <p>... and this:</p>
@@ -825,10 +805,10 @@ Here is an alternative version:</p>
 <img src="img/27.png" alt=""></p>
 <p>Try this now and make sure your site is responding as above on small screen sizes.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="09">
-        <h1>Layout</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="09">
+            <h1>Layout</h1>
 <p>Using the same <strong>stackable</strong> property - make all the strand pages use stackable segments. They should start to look like this:</p>
 <h1>#</h1>
 <p><img src="img/28.png" alt=""></p>
@@ -837,10 +817,10 @@ Here is an alternative version:</p>
 <h1>#</h1>
 <p><img src="img/30.png" alt=""></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="10">
-        <h1>Loading Semantic-UI</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="10">
+            <h1>Loading Semantic-UI</h1>
 <p>Currently, we have downloaded a copy of the Semantic-UI framework and stored it on our <strong>assets</strong> folder:</p>
 <pre><code>└── public
     ├── assets
@@ -899,35 +879,26 @@ Here is an alternative version:</p>
 <p>These are links to the semantic css libraries + supporting Javascript need for the library.</p>
 <p>Verify that the site works as before.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="Exercise">
-        <h1>Exercise</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="Exercise">
+            <h1>Exercise</h1>
 <h2>Archive</h2>
 <p>This is an archive of the completed project (so far):</p>
 <ul>
 <li><a href="archives/Lab01Solution.zip">Lab01 Solution</a></li>
 </ul>
 
+          </div>
+        
       </div>
-     
     </div>
   </div>
-</div>
-<!--<div class="ui bottom fixed borderless right menu">
-  <div class="ui right tiny menu">
-    <div class="ui mini message segment">
-      .
-      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
-         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-         target="_blank">Creative Commons License
-      </a>
-    </div>
-  </div>
-</div>-->
 
-<script>
-  $(document).on('keydown', function(e) {
+
+
+  <script>
+    $(document).on('keydown', function(e) {
   e = e || window.event;
   var nextTab;
   switch (e.which || e.keyCode) {
@@ -947,15 +918,7 @@ Here is an alternative version:</p>
   }
 });
 
-</script>
-
-
-
-    <footer>
-
-    </footer>
-    <script>
-      $(document).ready(function() {
+    $(document).ready(function() {
   $('img').addClass('ui image');
 
   $('.ui.embed').embed();
@@ -988,7 +951,18 @@ Here is an alternative version:</p>
     .sidebar('attach events', '#toc');
 });
 
-    </script>
+  </script>
+
+
+
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right small menu">
+      <div class="ui tiny basic message segment">
+         Powered by <a href="https://github.com/edeleastar/tutors-ts">tutors-ts.</a> 
+      </div>
+    </div>
+  </div>
+
   </body>
 
- </html>
+</html>
