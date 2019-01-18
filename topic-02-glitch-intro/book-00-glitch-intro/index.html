@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+          type="text/css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+          rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
+
+body {
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+  font-size:90%;
+  color: black;
+}
+
+p {
+  margin: 0.5em;
+}
+
+pre code {
+  font-family: "Monaco";
+  font-size: 100%;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
+}
+
+h1, h2, h3 {
+  border-bottom:thin solid black;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h1 {
+  font-style:italic;
+  font-size:130%;
+}
+
+h2 {
+  font-size:110%;
+}
+
+h3 {
+  font-size:100%;
+}
+
+
+
+      
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  background: white;
+  text-align: right;
+}
+.content {
+  flex: 1;
+  overflow: auto;
+}
+
+
+
+    </style>
+  </head>
+
+  
+  
+
+  <div class="ui fixed top pointing inverted stackable menu labmenu">
+    <header class="header item">
+      <i id="toc" class="sitemap icon"></i>
+      
+        <a href="../index.html"> Week 2: Glitch: Introduction to Glitch  </a>
+      
+    </header>
+    <div class="right tab-menu menu">
+      
+        <a class="item" data-tab="Lab-2 Glitch Intro">
+          Lab-2 Glitch Intro
+        </a>
+      
+        <a class="item" data-tab="01">
+          01
+        </a>
+      
+        <a class="item" data-tab="02">
+          02
+        </a>
+      
+        <a class="item" data-tab="03">
+          03
+        </a>
+      
+        <a class="item" data-tab="04">
+          04
+        </a>
+      
+        <a class="item" data-tab="05">
+          05
+        </a>
+      
+        <a class="item" data-tab="Exercises">
+          Exercises
+        </a>
+      
+    </div>
+  </div>
+
+
+  
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <br><br>
+      
+        
+          
+            <a class="item"
+               href="http://WebAppDevelopment.github.io/web-app-dev-2018///topic-01-html&css/book-a/index.html">Lab-01a Semantic UI </a>
+          
+        
+      
+        
+          
+            <a class="item"
+               href="http://WebAppDevelopment.github.io/web-app-dev-2018///topic-01-html&css/book-b/index.html">Lab-01b Semantic UI </a>
+          
+        
+      
+        
+          
+            <a class="item"
+               href="http://WebAppDevelopment.github.io/web-app-dev-2018///topic-02-glitch-intro/book-00-glitch-intro/index.html">Lab-2 Glitch Intro </a>
+          
+        
+      
+    </div>
+    <div class="pusher" tabindex="-1">
+      <div class="ui basic segment">
+        <br>
+        
+          <div class="ui tab segment lab" data-tab="Lab-2 Glitch Intro">
+            <h1>Objectives</h1>
+<p>Create, modify and view your first Glitch project.</p>
+
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="01">
+            <h1>Glitch Introduction</h1>
+<h2>Anatomy of a Glitch project</h2>
+<ul>
+<li>have set up and configured a Glitch account</li>
+<li>understand the structure a Glitch project</li>
+<li>share a link to a live project</li>
+</ul>
+<h2>Editing &amp; Downloading projects</h2>
+<ul>
+<li>modify the javascript and html for a live project</li>
+<li>be able to view and make some sense of the logs</li>
+<li>download and run the project on your own workstation</li>
+<li>export and view the project on github</li>
+</ul>
+
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="02">
+            <h1>Glitch Setup</h1>
+<p>If you do not have a github account, create one now:</p>
+<ul>
+<li><a href ="https://github.com" target="_ blank">Github.com</a></li>
+</ul>
+<p>Now sign up for the Glitch service:</p>
+<ul>
+<li><a href="https://Glitch.com" target="_ blank">Glitch.com</a></li>
+</ul>
+<p>This will require you to log in using your github account.</p>
+<p>Once you are logged in:</p>
+<ul>
+<li>Choose <code>New Project</code> to start a new project, and <img src="img/img1.PNG" alt=""></li>
+</ul>
+<ul>
+<li>From the dialog, choose the <code>hello-express</code> option to display a starter project: <img src="img/img2.PNG" alt=""></li>
+</ul>
+<p>A new project is opened with a random name (which we will change shortly).</p>
+<p><img src="img/img3.PNG" alt=""></p>
+<p>Press the <code>Show</code> button and it will reveal a live version of of the app you have just created:</p>
+<p><img src="img/img4.PNG" alt=""></p>
+<p>You can interact with this app by entering text in the Dreams box. </p>
+
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="03">
+            <h1>Project Structure and Editing</h1>
+<p>Back in the <code>source</code> view, look at the project structure in more detail:</p>
+<p><img src="img/03.png" alt=""></p>
+<p>Select each of the files in turn and have a look at the contents. The css and html content will be familiar, but js will require some javascript knowledge we have yet to develop.</p>
+<p>Any changes we make here will be directly published live to the cloud. For instance, open <code>index.html</code> and locate the following code:</p>
+<pre><code class="lang-html">&lt;main&gt;
+  &lt;p class=&quot;bold&quot;&gt;Oh hi,&lt;/p&gt;
+  &lt;p&gt;Tell me your hopes and dreams:&lt;/p&gt;
+  &lt;form&gt;
+    &lt;input type=&quot;text&quot; maxlength=&quot;100&quot; placeholder=&quot;Dreams!&quot;&gt;
+    &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
+  &lt;section class=&quot;dreams&quot;&gt;
+    &lt;ul id=&quot;dreams&quot;&gt;
+    &lt;/ul&gt;
+  &lt;/section&gt;
+&lt;/main&gt;</code></pre>
+<p>Make some changes to the text, eg:</p>
+<pre><code class="lang-html">&lt;p class=&quot;bold&quot;&gt;Howdy&lt;/p&gt;
+&lt;p&gt;Tell me your plans for the weekend:&lt;/p&gt;</code></pre>
+<p>Verify that the changed text appears.</p>
+<p>Looking at <code>client.js</code>, locate and modify some of the initial bullet items:</p>
+<pre><code class="lang-JavaScript">// Simple in-memory store for now
+var dreams = [
+  &quot;Find and count some sheep&quot;,
+  &quot;Climb a really tall mountain&quot;,
+  &quot;Wash the dishes&quot;
+];</code></pre>
+<p>Before making changes to this data, turn on logging first by pressing the <code>Logs</code> button.</p>
+<p><img src="img/img8.PNG" alt=""></p>
+<p>This has reconfigured the view so we can see a new panel along the end of the browser.</p>
+<p>As you make changes to <code>server.js</code>, you will see activity in this new panel. Type the following <code>console.log(x);</code> command, since <code>x</code> is not declared this should cause errors.</p>
+<p><img src="img/img10.PNG" alt="">
+<img src="img/img9.PNG" alt=""></p>
+<p>In particular, you will see errors as you type - but if you complete a modification successfully, then the errors will be replaced with a standard <code>app listening</code> message:</p>
+<p><img src="img/img11.PNG" alt=""></p>
+
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="04">
+            <h1>Configuring the Project</h1>
+<p>The project name can be changed by directly entering a new name on the sidebar:</p>
+<p><img src="img/img5.PNG" alt=""></p>
+<p>Type a new name such as <code>mllab01-webapp-2019</code>, i.e. a meaningful name such as your initials followed by labnumber and module details.</p>
+<p><img src="img/img6.PNG" alt=""></p>
+<p>This will also change the project url.</p>
+<p>Another useful option is to disable the &#39;Refresh App on Changes&#39; option:</p>
+<p><img src="img/img7.PNG" alt=""></p>
+<p>Try this now. The behaviour of this feature can be a little confusing as the log may continue to report errors - but the live app itself will not be refreshed until you reenable the option.</p>
+<p>Explore the advanced options:</p>
+<p><img src="img/img12.PNG" alt=""></p>
+<p>Experiment with of all of these options.</p>
+<p>For <code>Export to github</code>, the repository must already exist in your account. The project will, however, be on a different branch from master, so might not be visible at first unless you switch branches.</p>
+<p>For <code>Download Project</code>, try the following:</p>
+<ul>
+<li>On your workstation, first install <a href="https://nodejs.org" target="_ blank">nodejs.org</a> (select the latest LTS version).</li>
+<li>Edit the file <code>server.js</code>, changing the following statements:</li>
+</ul>
+<pre><code class="lang-js">// listen for requests :)
+var listener = app.listen(process.env.PORT, function () {
+  console.log(&#39;Your app is listening on port &#39; + listener.address().port);
+});</code></pre>
+<p>to:</p>
+<pre><code class="lang-js">// listen for requests :)
+const listener = app.listen(process.env.PORT || 4000, function () {
+  console.log(&#39;Your app is listening on port &#39; + listener.address().port);
+});</code></pre>
+<ul>
+<li>Download and unzip the downloaded project, remember where you unzipped to.</li>
+<li>From a command shell, inside the project folder (saved as <strong>app</strong>), run the following commands:</li>
+</ul>
+<pre><code class="lang-bash">npm install
+npm start</code></pre>
+<p>The latter command should display something like:</p>
+<pre><code>&gt; my-Glitch-app@0.0.1 start /Users/bmullally/webApp1/Glitch/app
+&gt; node server.js
+
+Your app is listening on port 4000</code></pre>
+<p>If you open a browser now on <a href = "http://localhost:4000" target ="_ blank">localhost</a> your application should be running locally:</p>
+<p><img src="img/img13.PNG" alt=""></p>
+
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="05">
+            <h1>Storing the dreams permanently</h1>
+<h2>Step 1</h2>
+<p>Copy the following file into the &lt;head&gt; section of the <code>index.html</code> file.</p>
+<pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css&quot; type=&quot;text/css&quot;&gt;</code></pre>
+<p>And,  copy the following files into the &lt;body&gt; section of the <code>index.html</code> file. Place them just before the closing &lt;body&gt; tag.</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<h2>Step 2</h2>
+<p>Move the array declaration from <code>client.js</code> to <code>server.js</code>.</p>
+<pre><code>const dreams = [
+  &#39;Find and count some sheep&#39;,
+  &#39;Climb a really tall SNOWY mountain&#39;,
+  &#39;Wash the dishes&#39;
+];</code></pre>
+<p>Add add the following to <code>server.js</code> also:</p>
+<pre><code>app.get(&#39;/dreams&#39;, function (request, response) {
+  response.send(dreams);
+});</code></pre>
+<p>Modify <code>client.js</code> by replacing:</p>
+<pre><code>dreams.forEach( function(dream) {
+  appendNewDream(dream);
+});</code></pre>
+<p>with</p>
+<pre><code>$.get(&#39;/dreams&#39;, function(dreams) {
+ dreams.forEach( function(dream) {
+  appendNewDream(dream);
+});
+});</code></pre>
+<p>The app should display the contents of the array (dreams) to the app as before.</p>
+<h2>Step 3</h2>
+<p>Modify <code>client.js</code> again by replacing:</p>
+<pre><code>dreamsForm.onsubmit = function(event) {
+  // stop our form submission from refreshing the page
+  event.preventDefault();
+
+  // get dream value and add it to the list
+  dreams.push(dreamInput.value);
+  appendNewDream(dreamInput.value);
+
+  // reset form 
+  dreamInput.value = &#39;&#39;;
+  dreamInput.focus();
+};</code></pre>
+<p>with</p>
+<pre><code>dreamsForm.onsubmit = function(event) {
+  // stop our form submission from refreshing the page
+  event.preventDefault();
+  const dream = dreamInput.value;
+  // get dream value and add it to the list
+  $.post(&#39;/dreams?&#39; + $.param({dream: dream}), function() {
+   appendNewDream(dream);
+  // reset form 
+   dreamInput.value = &#39;&#39;;
+   dreamInput.focus();
+  });
+};</code></pre>
+<p>Add the following to <code>server.js</code>:</p>
+<pre><code>app.post(&#39;/dreams&#39;, function (request, response) {
+  dreams.push(request.query.dream);
+  response.sendStatus(200);
+});</code></pre>
+<p>The app will now store the dreams in the array on the server (in the cloud), so if you add a dream and refresh the page, it is still there.</p>
+<p>Also, as this app is live in the cloud - and this is your own copy of the app - you can share this link with others. Do this now with someone next to you in the lab.</p>
+<p>Verify that you each see different lists depending on what has been entered. Enter some &#39;dreams&#39; into someone else&#39;s app.</p>
+
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="Exercises">
+            <h1>Exercises</h1>
+<h2>Exercise 1: Semantic UI</h2>
+<p>Examine this view:</p>
+<p><img src="img/img14.PNG" alt=""></p>
+<p>Try to modify index.html to render as above using semantic ui <code>container</code>, <code>segment</code>, <code>header</code> and <code>form</code> classes.</p>
+<p>If you are unfamiliar with SemanticUI investigate this website to become familiar with the css styles available: <a href="http://semantic-ui.com" target="_ blank"><code>http://semantic-ui.com</code></a></p>
+<h2>Exercise 2:</h2>
+<p>See if you can incorporate an image into the page:</p>
+<p><img src="img/img15.PNG" alt=""></p>
+<p>This will require you to:</p>
+<ul>
+<li>Locate an image and download it to your desktop.</li>
+<li>Upload the image by dragging it from your desktop to the <code>assets</code> folder.</li>
+<li>Click on the image to acquire the image <code>url</code>.</li>
+<li>Insert an <code>&lt;img&gt;</code> tag with this url into index.</li>
+</ul>
+<h2>Exercise 3:</h2>
+<p>If you completed the above tasks, download the app again and run it locally (see step 4).</p>
+<p>.</p>
+
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+    $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+  </script>
+
+
+
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right small menu">
+      <div class="ui tiny basic message segment">
+         Powered by <a href="https://github.com/edeleastar/tutors-ts">tutors-ts.</a> 
+      </div>
+    </div>
+  </div>
+
+  </body>
+
+</html>
