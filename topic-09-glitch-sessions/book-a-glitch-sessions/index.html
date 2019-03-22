@@ -98,7 +98,7 @@ html, body {
     <header class="header item">
       <i id="toc" class="sitemap icon"></i>
       
-        <a href="../index.html"> Week 9: Glitch: Sessions  </a>
+        <a href="../index.html"> 9: Glitch - Sessions  </a>
       
     </header>
     <div class="right tab-menu menu">
@@ -221,6 +221,20 @@ html, body {
           
             <a class="item"
                href="https://webappdevelopment.github.io/web-app-dev-2019//topic-09-glitch-sessions/book-a-glitch-sessions/index.html">Lab-9 Glitch Sessions </a>
+          
+        
+      
+        
+          
+            <a class="item"
+               href="https://webappdevelopment.github.io/web-app-dev-2019//topic-10-glitch-images/book-a-setup/index.html">Lab-10a Cloudinary Setup </a>
+          
+        
+      
+        
+          
+            <a class="item"
+               href="https://webappdevelopment.github.io/web-app-dev-2019//topic-10-glitch-images/book-b-glitch-cloudinary/index.html">Lab-10b glitch-picture-store </a>
           
         
       
@@ -600,10 +614,10 @@ module.exports = router;</code></pre>
 <h1>Dashboard</h1>
 <p>Try the following now:</p>
 <ul>
-<li>Log in as &#39;homer@simpson.com&#39;, &#39;secret&#39;.</li>
+<li>Log in as &#39;homer@simpson&#39;, &#39;secret&#39;.</li>
 <li>Add a playlist called &#39;test&#39;.</li>
 <li>Log out.</li>
-<li>Log in as &#39;marge@simpson.com&#39;, &#39;secret&#39;.</li>
+<li>Log in as &#39;marge@simpson&#39;, &#39;secret&#39;.</li>
 </ul>
 <p>Notice that we are seeing Homers test playlist even when we log in as Marge. The playlist-store.json may look like this:</p>
 <pre><code>{
@@ -723,7 +737,8 @@ In each module add the following statement (after or before the other <code>requ
     response.render(&#39;about&#39;, viewData);
    }
     else response.redirect(&#39;/&#39;);
-},</code></pre>
+  },
+};</code></pre>
 <h3>Revised index action (start.js)</h3>
 <pre><code>index(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);  
@@ -736,9 +751,10 @@ In each module add the following statement (after or before the other <code>requ
     response.render(&#39;start&#39;, viewData);
     }
     else response.redirect(&#39;/&#39;);
-},</code></pre>
+  },
+};</code></pre>
 <h3>Revised index action (playlist.js)</h3>
-<pre><code>index(request, response) {
+<pre><code>  index(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);  
     const playlistId = request.params.id;
     logger.debug(&#39;Playlist id = &#39;, playlistId);
@@ -751,7 +767,7 @@ In each module add the following statement (after or before the other <code>requ
     response.render(&#39;playlist&#39;, viewData);
     }
     else response.redirect(&#39;/&#39;);
-},</code></pre>
+  },</code></pre>
 
           </div>
         
@@ -790,7 +806,7 @@ In each module add the following statement (after or before the other <code>requ
   </div>
 
 
-
+  <br>
   <script>
     $(document).on('keydown', function(e) {
   e = e || window.event;
