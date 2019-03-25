@@ -1,0 +1,65 @@
+
+
+
+  {
+  
+  
+    "properties" : {},
+  
+  "type" : "lab",
+  "title" : "Lab-2 Glitch Intro",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Create, modify and view your first Glitch project.</p>",
+  "folder" : "book-00-glitch-intro",
+  "link" : "index.html",
+  "los": [
+   ]
+,
+  "chapters" : [
+  
+    {
+    "title": "# Objectives",
+    "shortTitle": "Lab-2 Glitch Intro",
+    "contentMd" : "# Objectives\r\n\r\nCreate, modify and view your first Glitch project.\r\n"
+    },
+  
+    {
+    "title": "# Glitch Introduction",
+    "shortTitle": "01",
+    "contentMd" : "# Glitch Introduction\r\n\r\nUpon completion of this lab you should be able to do all of the following:\r\n\r\n## Anatomy of a Glitch project\r\n\r\n- Set up and configure a Glitch account\r\n- Understand the structure a Glitch project\r\n- Share a link to a live project\r\n\r\n## Editing & Downloading projects\r\n\r\n- Modify the Javascript and html for a live project\r\n- Be able to view and make some sense of the logs\r\n- Download and run the project on your own workstation\r\n- Export and view the project on github\r\n"
+    },
+  
+    {
+    "title": "# Glitch Setup",
+    "shortTitle": "02",
+    "contentMd" : "# Glitch Setup\r\n\r\nIf you do not have a github account, create one now:\r\n\r\n- <a href =\"https://github.com\" target=\"_ blank\">Github.com</a>\r\n\r\nNow sign up for the Glitch service:\r\n\r\n- <a href=\"https://Glitch.com\" target=\"_ blank\">Glitch.com</a>\r\n\r\nThis will require you to log in using your github account.\r\n\r\nOnce you are logged in:\r\n\r\n- Choose `New Project` to start a new project, and ![](img/img1.PNG)\r\n\r\n\r\n- From the dialog, choose the `hello-express` option to display a starter project: ![](img/img2.PNG)\r\n\r\nA new project is opened with a random name (which we will change shortly).\r\n\r\n![](img/img3.PNG)\r\n\r\nPress the `Show` button and it will reveal a live version of of the app you have just created:\r\n\r\n![](img/img4.PNG)\r\n\r\nYou can interact with this app by entering text in the Dreams box. \r\n\r\n"
+    },
+  
+    {
+    "title": "# Project Structure and Editing",
+    "shortTitle": "03",
+    "contentMd" : "# Project Structure and Editing\r\n\r\nBack in the `source` view, look at the project structure in more detail:\r\n\r\n![](img/03.png)\r\n\r\nSelect each of the files in turn and have a look at the contents. The css and html content will be familiar, but js will require some javascript knowledge we have yet to develop.\r\n\r\nAny changes we make here will be directly published live to the cloud. For instance, open `index.html` and locate the following code:\r\n\r\n~~~html\r\n<main>\r\n  <p class=\"bold\">Oh hi,</p>\r\n  <p>Tell me your hopes and dreams:</p>\r\n  <form>\r\n    <input type=\"text\" maxlength=\"100\" placeholder=\"Dreams!\">\r\n    <button type=\"submit\">Submit</button>\r\n  </form>\r\n  <section class=\"dreams\">\r\n    <ul id=\"dreams\">\r\n    </ul>\r\n  </section>\r\n</main>\r\n~~~\r\n\r\nMake some changes to the text, eg:\r\n\r\n~~~html\r\n<p class=\"bold\">Howdy</p>\r\n<p>Tell me your plans for the weekend:</p>\r\n~~~\r\n\r\nVerify that the changed text appears.\r\n\r\nLooking at `client.js`, locate and modify some of the initial bullet items:\r\n\r\n~~~JavaScript\r\n// Simple in-memory store for now\r\nvar dreams = [\r\n  \"Find and count some sheep\",\r\n  \"Climb a really tall mountain\",\r\n  \"Wash the dishes\"\r\n];\r\n~~~\r\n\r\nBefore making changes to this data, turn on logging first by pressing the `Logs` button.\r\n\r\n![](img/img8.PNG)\r\n\r\nThis has reconfigured the view so we can see a new panel along the end of the browser.\r\n\r\nAs you make changes to `server.js`, you will see activity in this new panel. Type the following `console.log(x);` command, since `x` is not declared this should cause errors.\r\n\r\n![](img/img10.PNG)\r\n![](img/img9.PNG)\r\n\r\nIn particular, you will see errors as you type - but if you complete a modification successfully, then the errors will be replaced with a standard `app listening` message:\r\n\r\n![](img/img11.PNG)\r\n"
+    },
+  
+    {
+    "title": "# Configuring the Project",
+    "shortTitle": "04",
+    "contentMd" : "# Configuring the Project\r\n\r\nThe project name can be changed by directly entering a new name on the sidebar:\r\n\r\n![](img/img5.PNG)\r\n\r\nType a new name such as `mllab01-webapp-2019`, i.e. a meaningful name such as your initials followed by labnumber and module details.\r\n\r\n![](img/img6.PNG)\r\n\r\nThis will also change the project url.\r\n\r\nAnother useful option is to disable the 'Refresh App on Changes' option:\r\n\r\n![](img/img7.PNG)\r\n\r\nTry this now. The behaviour of this feature can be a little confusing as the log may continue to report errors - but the live app itself will not be refreshed until you reenable the option.\r\n\r\nExplore the advanced options:\r\n\r\n![](img/img12.PNG)\r\n\r\nExperiment with of all of these options.\r\n\r\nFor `Export to github`, the repository must already exist in your account. The project will, however, be on a different branch from master, so might not be visible at first unless you switch branches.\r\n\r\nFor `Download Project`, try the following:\r\n\r\n- On your workstation, first install <a href=\"https://nodejs.org\" target=\"_ blank\">nodejs.org</a> (select the latest LTS version).\r\n- Edit the file `server.js`, changing the following statements:\r\n\r\n~~~js\r\n// listen for requests :)\r\nvar listener = app.listen(process.env.PORT, function () {\r\n  console.log('Your app is listening on port ' + listener.address().port);\r\n});\r\n~~~\r\n\r\nto:\r\n\r\n~~~js\r\n// listen for requests :)\r\nconst listener = app.listen(process.env.PORT || 4000, function () {\r\n  console.log('Your app is listening on port ' + listener.address().port);\r\n});\r\n~~~\r\n\r\n- Download and unzip the downloaded project, remember where you unzipped to.\r\n- From a command shell, inside the project folder (saved as **app**), run the following commands:\r\n\r\n\r\n~~~bash\r\nnpm install\r\nnpm start\r\n~~~\r\n\r\nThe latter command should display something like:\r\n\r\n~~~\r\n> my-Glitch-app@0.0.1 start /Users/bmullally/webApp1/Glitch/app\r\n> node server.js\r\n\r\nYour app is listening on port 4000\r\n~~~\r\n\r\nIf you open a browser now on <a href = \"http://localhost:4000\" target =\"_ blank\">localhost</a> your application should be running locally:\r\n\r\n![](img/img13.PNG)\r\n"
+    },
+  
+    {
+    "title": "# Storing the dreams permanently",
+    "shortTitle": "05",
+    "contentMd" : "# Storing the dreams permanently\r\n\r\n## Step 1\r\n\r\nCopy the following file into the &lt;head&gt; section of the `index.html` file.\r\n\r\n~~~html\r\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css\" type=\"text/css\">\r\n ~~~\r\n\r\nAnd,  copy the following files into the &lt;body&gt; section of the `index.html` file. Place them just before the closing &lt;body&gt; tag.\r\n~~~\r\n<script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\r\n<script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js\"></script>\r\n~~~\r\n\r\n## Step 2\r\n\r\nMove the array declaration from `client.js` to `server.js`.\r\n\r\n~~~\r\nconst dreams = [\r\n  'Find and count some sheep',\r\n  'Climb a really tall SNOWY mountain',\r\n  'Wash the dishes'\r\n];\r\n~~~\r\n\r\nAdd add the following to `server.js` also:\r\n\r\n~~~\r\napp.get('/dreams', function (request, response) {\r\n  response.send(dreams);\r\n});\r\n~~~\r\n\r\nModify `client.js` by replacing:\r\n\r\n~~~\r\ndreams.forEach( function(dream) {\r\n  appendNewDream(dream);\r\n});\r\n~~~\r\n\r\nwith\r\n\r\n~~~\r\n$.get('/dreams', function(dreams) {\r\n dreams.forEach( function(dream) {\r\n  appendNewDream(dream);\r\n});\r\n});\r\n~~~\r\n\r\nThe app should display the contents of the array (dreams) to the app as before.\r\n\r\n\r\n## Step 3\r\n\r\nModify `client.js` again by replacing:\r\n\r\n~~~\r\ndreamsForm.onsubmit = function(event) {\r\n  // stop our form submission from refreshing the page\r\n  event.preventDefault();\r\n\r\n  // get dream value and add it to the list\r\n  dreams.push(dreamInput.value);\r\n  appendNewDream(dreamInput.value);\r\n\r\n  // reset form \r\n  dreamInput.value = '';\r\n  dreamInput.focus();\r\n};\r\n~~~\r\n\r\nwith\r\n\r\n~~~\r\ndreamsForm.onsubmit = function(event) {\r\n  // stop our form submission from refreshing the page\r\n  event.preventDefault();\r\n  const dream = dreamInput.value;\r\n  // get dream value and add it to the list\r\n  $.post('/dreams?' + $.param({dream: dream}), function() {\r\n   appendNewDream(dream);\r\n  // reset form \r\n   dreamInput.value = '';\r\n   dreamInput.focus();\r\n  });\r\n};\r\n~~~\r\n\r\nAdd the following to `server.js`:\r\n\r\n~~~\r\napp.post('/dreams', function (request, response) {\r\n  dreams.push(request.query.dream);\r\n  response.sendStatus(200);\r\n});\r\n~~~\r\n\r\nThe app will now store the dreams in the array on the server (in the cloud), so if you add a dream and refresh the page, it is still there.\r\n\r\nAlso, as this app is live in the cloud - and this is your own copy of the app - you can share this link with others. Do this now with someone next to you in the lab.\r\n\r\nVerify that you each see different lists depending on what has been entered. Enter some 'dreams' into someone else's app.\r\n\r\n\r\n\r\n\r\n"
+    },
+  
+    {
+    "title": "# Exercises",
+    "shortTitle": "Exercises",
+    "contentMd" : "# Exercises\r\n\r\n## Exercise 1: Semantic UI\r\n\r\nExamine this view:\r\n\r\n![](img/img14.PNG)\r\n\r\nTry to modify index.html to render as above using semantic ui `container`, `segment`, `header` and `form` classes.\r\n\r\nIf you are unfamiliar with SemanticUI investigate this website to become familiar with the css styles available: <a href=\"http://semantic-ui.com\" target=\"_ blank\">`http://semantic-ui.com`</a>\r\n\r\n\r\n## Exercise 2:\r\n\r\nSee if you can incorporate an image into the page:\r\n\r\n![](img/img15.PNG)\r\n\r\nThis will require you to:\r\n\r\n- Locate an image and download it to your desktop.\r\n- Upload the image by dragging it from your desktop to the `assets` folder.\r\n- Click on the image to acquire the image `url`.\r\n- Insert an `<img>` tag with this url into index.\r\n\r\n## Exercise 3:\r\n\r\nIf you completed the above tasks, download the app again and run it locally (see step 4).\r\n\r\n.\r\n\r\n\r\n"
+    }
+  
+  ]
+  }
+
