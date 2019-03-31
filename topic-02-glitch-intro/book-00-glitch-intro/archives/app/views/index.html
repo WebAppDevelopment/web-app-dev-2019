@@ -8,51 +8,73 @@
 <!-- hbs(handlebars): http://handlebarsjs.com/ -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Welcome to Glitch!</title>
     <meta name="description" content="A cool thing made with Glitch">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css">
     <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--  <link rel="stylesheet" href="/style.css">-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css" type="text/css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
 
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
   </head>
-  <body class="ui container">
-    <header class="ui segment blue top border">
-      <h1 class="ui header">
+  
+  <body>
+    <div class ="ui raised stackable segment">
+
+    <header class = "ui center aligned padded raised stackable grid segment">
+      <h1>
         A Dream of the Future
       </h1>
     </header>
 
-    <main class="ui segment ">
+    <main class ="ui two column raised stackable grid segment">
+      <div class="ui  column">
+        
+
       <p class="bold">Oh hi,</p>
+      
       <p>Tell me your hopes and dreams:</p>
-      <form>
-        <input type="text" maxlength="100" placeholder="Dreams!">
-        <button type="submit">Submit</button>
-      </form>
+      
+      <form class = "ui form">
+        <div class="fields">
+          <div class="eight wide field">
+                <input name="dream" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
+          </div>
+          <div class="field">
+        <button type="submit" id="submit-dream" class = "ui button">Submit Dream</button>
+          </div>
+        </div>
+       </form>
+      
       <section class="dreams">
-        <ul id="dreams">
-        </ul>
+        <ul id="dreams"></ul>
       </section>
+        
+        </div>
+         <div class="ui  column" >
+
+           <img src = "https://cdn.glitch.com/bbbf44bf-c099-4e4c-87f6-b4123844822e%2Fhomer.png?1548418041737" class= "ui centered image">
+      </div>
     </main>
 
     <footer>
-      <a href="https://glitch.com">
-        Remix this in Glitch
-      </a>
+      Made with <a href="https://glitch.com">Glitch</a>!
     </footer>
-
-    <!-- Your web-app is https, so your scripts need to be too -->
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
-            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
-            crossorigin="anonymous"></script>
-    <script src="/client.js"></script>
+      
+    </div>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 
   </body>
 </html>

@@ -1,5 +1,5 @@
-Welcome to the Glitch BETA
-=========================
+Welcome to Glitch
+=================
 
 Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
@@ -21,7 +21,7 @@ On the back-end,
 - safely store app secrets in `.env` (nobody can see this but you and people you invite)
 
 
-Made by [Fog Creek](https://fogcreek.com/)
+Made by [Glitch](https://glitch.com/)
 -------------------
 
 \ ゜o゜)ノ
