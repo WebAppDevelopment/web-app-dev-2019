@@ -1094,7 +1094,7 @@
   "title" : "Lab-10b glitch-picture-store",
   "img" : "img/main.png",
   "videoid" : "none",
-  "objectives" : "<p>Build an application the can facilitate upload and display of images in Glitch.</p>",
+  "objectives" : "<p>Build an application the can facilitate the upload and display of images in Glitch.</p>",
   "folder" : "book-b-glitch-cloudinary",
   "link" : "index.html",
   "los": [
@@ -1110,11 +1110,11 @@
     "properties" : {},
   
   "type" : "topic",
-  "title" : "11: Glitch - Statistics ",
+  "title" : "11: Glitch - Statistics and Helpers ",
   "img" : "topic.png",
   "videoid" : "",
-  "objectives" : "<p>Implement simple statistics in the playlist app.</p>",
-  "folder" : "topic-11-statistics",
+  "objectives" : "<p>Implement simple statistics and helpers in the playlist app.</p>",
+  "folder" : "topic-11-statistics-helpers",
   "link" : "index.html",
   "los": [
    {
@@ -1129,6 +1129,22 @@
   "objectives" : "<p>This lecture will explain how to add some simple statistics to the playlist app.</p>",
   "folder" : "talk-a-statistics",
   "link" : "statistics.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Adding a Customised Helper ",
+  "img" : "helper.png",
+  "videoid" : "none",
+  "objectives" : "<p>This lecture will explain how to add a simple customised Helper.</p>",
+  "folder" : "talk-b-Helper",
+  "link" : "helper.pdf",
   "los": [
    ]
 
