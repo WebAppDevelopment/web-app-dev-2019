@@ -11,7 +11,7 @@
   "img" : "course.png",
   "videoid" : "",
   "objectives" : "<p>A short description of the course. Normally this will not be visible, unless the course is aggregated into a portfolio of modules</p>",
-  "folder" : "web-app-dev-1",
+  "folder" : "web-app-dev-2019",
   "link" : "index.html",
   "los": [
    ]
@@ -73,6 +73,22 @@
   "objectives" : "<p>Version control during assignment 2, Locking your code.</p>",
   "folder" : "talk-c-assignment-2-tips",
   "link" : "assignment-2-tips.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Repeat CA ",
+  "img" : "repeat-CA.png",
+  "videoid" : "none",
+  "objectives" : "<p>Repeat CA specification.</p>",
+  "folder" : "talk-d-assignment-d",
+  "link" : "repeat-CA.pdf",
   "los": [
    ]
 
