@@ -1,0 +1,1173 @@
+
+
+
+  {
+  
+  
+    "properties" : {},
+  
+  "type" : "course",
+  "title" : " Web Application Development 1 ",
+  "img" : "course.png",
+  "videoid" : "",
+  "objectives" : "<p>A short description of the course. Normally this will not be visible, unless the course is aggregated into a portfolio of modules</p>",
+  "folder" : "web-app-dev-1-2018",
+  "link" : "index.html",
+  "los": [
+   ]
+,
+  "topics" : [  {
+    
+  
+    "properties" : {},
+  
+  "type" : "topic",
+  "title" : "Assignments ",
+  "img" : "talk-a-assignment-1/assignment-1.png",
+  "videoid" : "",
+  "objectives" : "<p>Specifications for Assignments 1 &amp; 2; and Repeat CA</p>",
+  "folder" : "topic-00-assignments",
+  "link" : "index.html",
+  "los": [
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Assignment 1 ",
+  "img" : "assignment-1.png",
+  "videoid" : "none",
+  "objectives" : "<p>Assignment 1 specification.</p>",
+  "folder" : "talk-a-assignment-1",
+  "link" : "assignment-1.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Assignment 2 ",
+  "img" : "assignment-2.png",
+  "videoid" : "none",
+  "objectives" : "<p>Assignment 2 specification.</p>",
+  "folder" : "talk-b-assignment-2",
+  "link" : "assignment-2.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Assignment 2 tips ",
+  "img" : "assignment-2-tips.png",
+  "videoid" : "none",
+  "objectives" : "<p>Version control during assignment 2, Locking your code.</p>",
+  "folder" : "talk-c-assignment-2-tips",
+  "link" : "assignment-2-tips.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Repeat CA ",
+  "img" : "repeat-CA.png",
+  "videoid" : "none",
+  "objectives" : "<p>Repeat CA specification.</p>",
+  "folder" : "talk-d-assignment-d",
+  "link" : "repeat-CA.pdf",
+  "los": [
+   ]
+
+    } 
+   ]
+
+  },
+ {
+    
+  
+    "properties" : {},
+  
+  "type" : "topic",
+  "title" : "1: CSS Framework ",
+  "img" : "topic.png",
+  "videoid" : "",
+  "objectives" : "<p>Introduction to the Semantic UI CSS Framework</p>",
+  "folder" : "topic-01-html&css",
+  "link" : "index.html",
+  "los": [
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Semantic-UI I ",
+  "img" : "sematic-ui-part-1.png",
+  "videoid" : "none",
+  "objectives" : "<p>An overview of the container and segments styles in the framework</p>",
+  "folder" : "talk-1",
+  "link" : "sematic-ui-part-1.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Semantic-UI II ",
+  "img" : "sematic-ui-part-2.png",
+  "videoid" : "none",
+  "objectives" : "<p>An exploration of the Grid and Image styles.</p>",
+  "folder" : "talk-2",
+  "link" : "sematic-ui-part-2.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Semantic-UI III ",
+  "img" : "sematic-ui-part-3.png",
+  "videoid" : "none",
+  "objectives" : "<p>An exploration of the Tables</p>",
+  "folder" : "talk-3",
+  "link" : "sematic-ui-part-3.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Semantic Part IV ",
+  "img" : "semantic-4.png",
+  "videoid" : "none",
+  "objectives" : "<p>Our final tour of the Semantic-UI library - with a focus on icons, variations in segments and responsive grids</p>",
+  "folder" : "talk-4",
+  "link" : "semantic-4.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "lab",
+  "title" : "Lab-01a Semantic UI",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Rebuild the web site using semantic-ui</p>",
+  "folder" : "book-a",
+  "link" : "index.html",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "lab",
+  "title" : "Lab-01b Semantic UI",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Continue to enhance the web site with additional Semantic-UI styles &amp; Components</p>",
+  "folder" : "book-b",
+  "link" : "index.html",
+  "los": [
+   ]
+
+    } 
+   ]
+
+  },
+ {
+    
+  
+    "properties" : {},
+  
+  "type" : "topic",
+  "title" : "2: Glitch - Introduction to Glitch ",
+  "img" : "topic.png",
+  "videoid" : "",
+  "objectives" : "<p>An introduction to the glitch platform + the very basics of the Javascript Language</p>",
+  "folder" : "topic-02-glitch-intro",
+  "link" : "index.html",
+  "los": [
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Back End Scripting ",
+  "img" : "Back-End.png",
+  "videoid" : "none",
+  "objectives" : "<p>Introduction to the concepts of Back End Scripting</p>",
+  "folder" : "talk-a-Back-End",
+  "link" : "Back-End.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Introducing Glitch ",
+  "img" : "glitch.png",
+  "videoid" : "none",
+  "objectives" : "<p>What is is, what role it plays, why was it built.</p>",
+  "folder" : "talk-b-glitch",
+  "link" : "glitch.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Glitch Tour ",
+  "img" : "glitch-tour.png",
+  "videoid" : "none",
+  "objectives" : "<p>A look at at the components of a Glitch project. Also types of project will we build?</p>",
+  "folder" : "talk-c-glitch-tour",
+  "link" : "glitch-tour.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Glitch Features ",
+  "img" : "glitch-features.png",
+  "videoid" : "none",
+  "objectives" : "<p>The options available in a Glitch project + a an overview of the community projects</p>",
+  "folder" : "talk-d-glitch-features",
+  "link" : "glitch-features.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "JS Introduction ",
+  "img" : "js-background.png",
+  "videoid" : "none",
+  "objectives" : "<p>Place javascript in its proper context, and explore its relationship to the browser.</p>",
+  "folder" : "talk-e-js-background",
+  "link" : "js-background.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "lab",
+  "title" : "Lab-2 Glitch Intro",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Create, modify and view your first Glitch project.</p>",
+  "folder" : "book-00-glitch-intro",
+  "link" : "index.html",
+  "los": [
+   ]
+
+    } 
+   ]
+
+  },
+ {
+    
+  
+    "properties" : {},
+  
+  "type" : "topic",
+  "title" : "3: JS - Variables, Boolean Logic & Objects ",
+  "img" : "talk-a-js-variables/js-variables.jpg",
+  "videoid" : "",
+  "objectives" : "<p>Primitive JS types. Making decisions using selection statements. Simple objects.</p>",
+  "folder" : "topic-03-js-intro",
+  "link" : "index.html",
+  "los": [
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Variables ",
+  "img" : "js-variables.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>Explore the javascript variables, including the basic types, conversion and usage</p>",
+  "folder" : "talk-a-js-variables",
+  "link" : "js-variables.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Boolean Logic ",
+  "img" : "js-boolean-logic.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>Boolean expressions, operators and selection statements</p>",
+  "folder" : "talk-b-js-boolean-logic",
+  "link" : "js-boolean-logic.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Const, Let & Objects ",
+  "img" : "js-variables-&-objects.png",
+  "videoid" : "none",
+  "objectives" : "<p>Using const &amp; let. Declaring and using objects.</p>",
+  "folder" : "talk-c-js-variables-&-objects",
+  "link" : "js-variables-&-objects.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Variables & Objects Review ",
+  "img" : "variables-&-objects-review.png",
+  "videoid" : "none",
+  "objectives" : "<p>A concise tour of the structure of variables &amp; objects in Javascript</p>",
+  "folder" : "talk-d-variables-&-objects-revisited",
+  "link" : "variables-&-objects-review.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "lab",
+  "title" : "Lab-3 JS Intro",
+  "img" : "img/main.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>Background &amp; Tools, Variables &amp; Boolean Logic</p>",
+  "folder" : "book-a-js-introduction",
+  "link" : "index.html",
+  "los": [
+   ]
+
+    } 
+   ]
+
+  },
+ {
+    
+  
+    "properties" : {},
+  
+  "type" : "topic",
+  "title" : "4: Glitch - Controllers & Views ",
+  "img" : "talk-a-web-app-intro/web-app-intro.png",
+  "videoid" : "",
+  "objectives" : "<p>Build your first Glitch app, a simple static playlist web site.</p>",
+  "folder" : "topic-04-app-controllers-views",
+  "link" : "index.html",
+  "los": [
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Web App Introduction ",
+  "img" : "web-app-intro.png",
+  "videoid" : "none",
+  "objectives" : "<p>Structure of a web app: Front-end Vs Backend. Routers, Models, Views, Controllers</p>",
+  "folder" : "talk-a-web-app-intro",
+  "link" : "web-app-intro.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Front-end ",
+  "img" : "front-end.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>Views: Handlebars layouts, partials and templates</p>",
+  "folder" : "talk-b-front-end",
+  "link" : "front-end.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Modules ",
+  "img" : "modules.png",
+  "videoid" : "none",
+  "objectives" : "<p>The backend will use a modular approach, relying on specific mechanism to import/export shared objects</p>",
+  "folder" : "talk-c-modules",
+  "link" : "modules.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Back-end ",
+  "img" : "back-end.png",
+  "videoid" : "none",
+  "objectives" : "<p>Server, routes + controllers</p>",
+  "folder" : "talk-d-back-end",
+  "link" : "back-end.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "lab",
+  "title" : "Lab-4 Glitch Playlist 1",
+  "img" : "img/main.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>Import and run a new starter project. Extend this project to include multiple &#39;views&#39;. Explore the handlebars templating library.</p>",
+  "folder" : "book-a-glitch-playlist-1",
+  "link" : "index.html",
+  "los": [
+   ]
+
+    } 
+   ]
+
+  },
+ {
+    
+  
+    "properties" : {},
+  
+  "type" : "topic",
+  "title" : "5: Glitch - Templates & Routes ",
+  "img" : "talk-a-templates/templates.png",
+  "videoid" : "",
+  "objectives" : "<p>Explore templating in more detail. Enhancing the routing behaviour.</p>",
+  "folder" : "topic-05-app-templates-routes",
+  "link" : "index.html",
+  "los": [
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Templates ",
+  "img" : "templates.png",
+  "videoid" : "none",
+  "objectives" : "<p>Templates enable dynamic composition of views from layouts, partials and expressions.</p>",
+  "folder" : "talk-a-templates",
+  "link" : "templates.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "JSON ",
+  "img" : "templates+json.png",
+  "videoid" : "none",
+  "objectives" : "<p>JSON is notation for representing javascript objects in a simple literal format.</p>",
+  "folder" : "talk-b-templates+json",
+  "link" : "templates+json.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Dashboard ",
+  "img" : "dashboard.png",
+  "videoid" : "none",
+  "objectives" : "<p>Review the dashboard controller in detail.</p>",
+  "folder" : "talk-c-dashboard",
+  "link" : "dashboard.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Playlist ",
+  "img" : "playlist.png",
+  "videoid" : "none",
+  "objectives" : "<p>Revise the Dashboard to render each playlist without their contents. Use a new playlist view to render individual playlists.</p>",
+  "folder" : "talk-d-playlist",
+  "link" : "playlist.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "MVC ",
+  "img" : "mvc.png",
+  "videoid" : "none",
+  "objectives" : "<p>Explore the MVC Pattern in action in Playlist 2</p>",
+  "folder" : "talk-e-mvc",
+  "link" : "mvc.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Delete Song ",
+  "img" : "delete-button.png",
+  "videoid" : "none",
+  "objectives" : "<p>How to remove a song from the playlist</p>",
+  "folder" : "talk-f-delete-button",
+  "link" : "delete-button.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "lab",
+  "title" : "Lab-5 Glitch Playlist 2",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Refactor the dashboard controller to show summary of the playlists + link to show playlist details.</p>",
+  "folder" : "book-a-glitch-playlist-2",
+  "link" : "index.html",
+  "los": [
+   ]
+
+    } 
+   ]
+
+  },
+ {
+    
+  
+    "properties" : {},
+  
+  "type" : "topic",
+  "title" : "6: Custom CSS & JavaScript ",
+  "img" : "topic.png",
+  "videoid" : "",
+  "objectives" : "<p>Add style and client-side code to the Playlist.</p>",
+  "folder" : "topic-06-CA-week",
+  "link" : "index.html",
+  "los": [
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Delete a Playlist ",
+  "img" : "delplaylist.png",
+  "videoid" : "none",
+  "objectives" : "<p>This lecture will go through the steps for deleting a Playlist.</p>",
+  "folder" : "talk-a-del-playlist",
+  "link" : "delplaylist.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Styling your playlist ",
+  "img" : "styling.png",
+  "videoid" : "none",
+  "objectives" : "<p>This lecture will explain how you can add your own CSS styles to your projects on Glitch.</p>",
+  "folder" : "talk-b-styling",
+  "link" : "styling.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Adding client-side JavaScript ",
+  "img" : "js.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>In this lecture, we show you how to add client-side JavaScript to your projects on Glitch.</p>",
+  "folder" : "talk-c-javascript",
+  "link" : "js.pdf",
+  "los": [
+   ]
+
+    } 
+   ]
+
+  },
+ {
+    
+  
+    "properties" : {},
+  
+  "type" : "topic",
+  "title" : "7: Glitch - Model View Controller ",
+  "img" : "topic.jpg",
+  "videoid" : "",
+  "objectives" : "<p>Explore MVC as implemented in Playlist</p>",
+  "folder" : "topic-07-app-models",
+  "link" : "index.html",
+  "los": [
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Forms Revision ",
+  "img" : "talk-1.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>This lecture provides a recap on HTML forms.</p>",
+  "folder" : "talk-1-forms-revision",
+  "link" : "talk-1.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Playlist Forms Design ",
+  "img" : "forms-design.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>This section looks at the design of our forms for the playlist app.</p>",
+  "folder" : "talk-2-playlist-form-design",
+  "link" : "forms-design.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Model View Controller ",
+  "img" : "mvc.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>MVC is the guiding principle for the structure of our application.</p>",
+  "folder" : "talk-3-mvc-revisited",
+  "link" : "mvc.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Form Programming ",
+  "img" : "form-prog.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>How to accept user input from a form and process it in a controller</p>",
+  "folder" : "talk-4-form-programming",
+  "link" : "form-prog.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "The Store ",
+  "img" : "store.png",
+  "videoid" : "none",
+  "objectives" : "<p>The Playlists are ultimately stored in a JSON file. This file is managed by database modules.</p>",
+  "folder" : "talk-5-store",
+  "link" : "store.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "lab",
+  "title" : "Lab-7 Glitch Playlist 3",
+  "img" : "img/main.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>Enable Songs and Playlists to be added via simple forms.</p>",
+  "folder" : "book-a-glitch-playlist-3",
+  "link" : "index.html",
+  "los": [
+   ]
+
+    } 
+   ]
+
+  },
+ {
+    
+  
+    "properties" : {},
+  
+  "type" : "topic",
+  "title" : "8: JS - Arrays ",
+  "img" : "topic.png",
+  "videoid" : "",
+  "objectives" : "",
+  "folder" : "topic-08-js-arrays",
+  "link" : "index.html",
+  "los": [
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Arrays: Basics ",
+  "img" : "arrays-basics.png",
+  "videoid" : "none",
+  "objectives" : "<p>Creating, accessing, adding to and removing from arrays.</p>",
+  "folder" : "talk-a-arrays-basics",
+  "link" : "arrays-basics.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Array Methods ",
+  "img" : "array-methods.png",
+  "videoid" : "none",
+  "objectives" : "<p>Exploring length, slice, concat, join, indexOf, lastIndexOf</p>",
+  "folder" : "talk-b-array-methods",
+  "link" : "array-methods.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Array Iteration ",
+  "img" : "array-iteration.jpeg",
+  "videoid" : "none",
+  "objectives" : "<p>Using for, while and do-while to iterate over an array</p>",
+  "folder" : "talk-c-array-iteration",
+  "link" : "array-iteration.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Arrays of Objects ",
+  "img" : "arrays-of-objects.png",
+  "videoid" : "none",
+  "objectives" : "<p>Arrays of more complex data structures, including nested objects.</p>",
+  "folder" : "talk-d-arrays-of-objects",
+  "link" : "arrays-of-objects.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Update a Song ",
+  "img" : "update-a-song.png",
+  "videoid" : "none",
+  "objectives" : "<p>An overview of the how to update/change a Song record</p>",
+  "folder" : "talk-e-update-a-song",
+  "link" : "update-a-song.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "lab",
+  "title" : "Lab-8 JS Arrays",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Array Basics, Array Methods &amp; Iteration</p>",
+  "folder" : "book-a-js-arrays",
+  "link" : "index.html",
+  "los": [
+   ]
+
+    } 
+   ]
+
+  },
+ {
+    
+  
+    "properties" : {},
+  
+  "type" : "topic",
+  "title" : "9: Glitch - Sessions ",
+  "img" : "talk-1-sessions-intro/c-sessions.png",
+  "videoid" : "",
+  "objectives" : "<p>In order to implement user account management, sessions provide a mechanism for identifying specific users</p>",
+  "folder" : "topic-09-glitch-sessions",
+  "link" : "index.html",
+  "los": [
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : " Sessions Introduction ",
+  "img" : "c-sessions.png",
+  "videoid" : "none",
+  "objectives" : "<p>Keeping track of the currently logged in user is a challenge - as HTTP is, by definition &#39;stateless&#39;. Hidden form fields, url rewriting and cookies are three common techniques for implementing sessions.</p>",
+  "folder" : "talk-1-sessions-intro",
+  "link" : "c-sessions.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Using Sessions ",
+  "img" : "using-sessions.gif",
+  "videoid" : "none",
+  "objectives" : "<p>Explore how we need to refactor the application to support sessions</p>",
+  "folder" : "talk-2-using-sessions",
+  "link" : "using-sessions.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Sessions UX ",
+  "img" : "sessions-ux.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>New forms needed to enable the user to signup / login</p>",
+  "folder" : "talk-3-sessions-ux",
+  "link" : "sessions-ux.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Creating Sessions ",
+  "img" : "creating-sessions.png",
+  "videoid" : "none",
+  "objectives" : "<p>The API to create, access and destroy sessions.</p>",
+  "folder" : "talk-4-creating-sessions",
+  "link" : "creating-sessions.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "lab",
+  "title" : "Lab-9 Glitch Sessions",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Introduce Sessions onto the Playlist application, enabling user accounts and cookie-based authentication.</p>",
+  "folder" : "book-a-glitch-sessions",
+  "link" : "index.html",
+  "los": [
+   ]
+
+    } 
+   ]
+
+  },
+ {
+    
+  
+    "properties" : {},
+  
+  "type" : "topic",
+  "title" : "10: Glitch - Images ",
+  "img" : "topic.png",
+  "videoid" : "",
+  "objectives" : "<p>How to build an application that enables a user to upload and display images.</p>",
+  "folder" : "topic-10-glitch-images",
+  "link" : "index.html",
+  "los": [
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Cloudinary API ",
+  "img" : "cloudinary.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>The fundamentals of the cloudinary service + API</p>",
+  "folder" : "talk-1-cloudinary",
+  "link" : "cloudinary.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Picture-store App ",
+  "img" : "picturestore.png",
+  "videoid" : "none",
+  "objectives" : "<p>A review of the UX of the picture-store app</p>",
+  "folder" : "talk-2-picture-app",
+  "link" : "picturestore.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Picture-store Implementation ",
+  "img" : "picturestore-impl.png",
+  "videoid" : "none",
+  "objectives" : "<p>The Glitch app implementation.</p>",
+  "folder" : "talk-3-picture-impl",
+  "link" : "picturestore-impl.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "lab",
+  "title" : "Lab-10a Cloudinary Setup",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Sign up and configure a Cloudinary Account.</p>",
+  "folder" : "book-a-setup",
+  "link" : "index.html",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "lab",
+  "title" : "Lab-10b glitch-picture-store",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Build an application the can facilitate the upload and display of images in Glitch.</p>",
+  "folder" : "book-b-glitch-cloudinary",
+  "link" : "index.html",
+  "los": [
+   ]
+
+    } 
+   ]
+
+  },
+ {
+    
+  
+    "properties" : {},
+  
+  "type" : "topic",
+  "title" : "11: Glitch - Statistics and Helpers ",
+  "img" : "topic.png",
+  "videoid" : "",
+  "objectives" : "<p>Implement simple statistics and helpers in the playlist app.</p>",
+  "folder" : "topic-11-statistics-helpers",
+  "link" : "index.html",
+  "los": [
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Statistics ",
+  "img" : "statistics.png",
+  "videoid" : "none",
+  "objectives" : "<p>This lecture will explain how to add some simple statistics to the playlist app.</p>",
+  "folder" : "talk-a-statistics",
+  "link" : "statistics.pdf",
+  "los": [
+   ]
+
+    } ,
+   {
+    
+  
+    "properties" : {},
+  
+  "type" : "talk",
+  "title" : "Adding a Customised Helper ",
+  "img" : "helper.png",
+  "videoid" : "none",
+  "objectives" : "<p>This lecture will explain how to add a simple customised Helper.</p>",
+  "folder" : "talk-b-Helper",
+  "link" : "helper.pdf",
+  "los": [
+   ]
+
+    } 
+   ]
+
+  }
+ ]
+  }
+
